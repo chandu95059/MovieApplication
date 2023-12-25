@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="searchcontainer">
+    <input type="text" id='movieName' placeholder="Enter a Movie Name" class="search-bar">
+    <button class="search-btn" onclick="fetchmovieDetails()">Search</button>
+  </div>
+
+
+  <section>
+    <div class="movie-details" id="intro">
+      <h3 style="font-size: 60px; color:white">Want the complete <span style="font-size: 60px;"> deatils of movie
+          ?</span></h3>
+      <p style="font-size: 22px;color:white">Search for the movie name and get complete details including
+        directors,actors, IMDB ratings,Earnings and more intresting facts</p>
+    </div>
+  </section>
+
+  <div class="loader" id="loader"></div>
+
+
+  <div class="movie-container" id="movie-container">
+    <div class="movie-detils">
+      <h3 id="movie-title"></h3>
+      <p id="movie-desc"></p>
+      <p>Year: <span id="value year"></span></p>
+      <p>Genre: <span id="value genre"></span></p>
+      <p>IMBD: <span id="value imbd-ratings"></span></p>
+      <p>Actors: <span id="value actors"></span></p>
+      <p>Director: <span id="value director"></span></p>
+      <p>Awards: <span id="value awards"></span></p>
+      <p>Collection: <span id="value collections"></span></p>
+    </div>
+    <div class="movie-img-sec">
+      <img src="" alt="" class="movie-img" id="movie-img">
+    </div>
+  </div>
+
+  <div id="error-container">
+    <h3 class="error-msg">Movie Not Found</h3>
+
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
